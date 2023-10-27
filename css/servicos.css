@@ -1,0 +1,79 @@
+.servicos {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.servicos__listagem-servicos {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.servicos__listagem-servicos__servico {
+    width: 32%;
+    box-sizing: border-box;
+    padding: 30px;
+    border: dashed 1px var(--cor-titulos);
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.servicos__listagem-servicos__servico__tipo {
+    color: var(--cor-textos-padrao);
+}
+
+.servicos__listagem-servicos__servico__nome-servico {
+    color: var(--cor-titulos);
+    font-family: var(--fonte-titulos);
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.servicos__listagem-servicos__servico__descricao {
+    color: var(--cor-textos-padrao);
+    margin: 15px auto;
+    line-height: 24px;
+    text-align: left;
+}
+
+.servicos__listagem-servicos__servico__btn-entre-em-contato {
+    color: var(--cor-textos-padrao);
+    line-height: 24px;
+    transition: color 0.3s ease;
+}
+
+.servicos__listagem-servicos__servico__btn-entre-em-contato:hover {
+    color: var(--cor-titulos);
+}
+
+.servicos__listagem-servicos__servico__tipo:hover {
+    cursor: default;
+}
+
+.servicos__listagem-servicos__servico__nome-servico:hover {
+    cursor: default;
+}
+
+.servicos__listagem-servicos__servico__descricao:hover {
+    cursor: default;
+}
+
+@media only screen and (max-width: 500px) {
+    .servicos__listagem-servicos {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .servicos__listagem-servicos__servico {
+        width: 100%;
+    }
+
+    .servicos__listagem-servicos__servico__nome-servico {
+        font-size: 30px;
+    }
+}

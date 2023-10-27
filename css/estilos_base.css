@@ -1,0 +1,31 @@
+:root {
+    --fonte-titulos: 'Mohave', sans-serif;
+    --fonte-padrao: 'Nunito Sans', sans-serif;
+    --cor-titulos: rgb(0, 255, 67);
+    --cor-textos-padrao: #ffffff;
+    --cor-fundo-tela: #000000;
+    --cor-fundo-banner: rgba(0, 255, 67, 0.7);
+    --cor-btn-mouse-cima:  rgb(0, 178, 67);
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-color: #000000;
+    box-sizing: border-box;
+}
+
+.titulo-secao {
+    color: var(--cor-titulos);
+    font-family: var(--fonte-titulos);
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.subtitulo-secao {
+    color: var(--cor-textos-padrao);
+    text-align: center;
+    font-size: 20px;
+}

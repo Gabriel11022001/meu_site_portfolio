@@ -1,0 +1,130 @@
+.projetos {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.projetos__categorias {
+    width: 30%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.projetos__categorias__categoria {
+    background: none;
+    border: solid 1px var(--cor-titulos);
+    box-sizing: border-box;
+    padding: 10px 20px;
+    text-align: center;
+    color: var(--cor-textos-padrao);
+    font-size: 18px;
+    margin: 10px 0;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.projetos__categorias__categoria:hover {
+    background-color: var(--cor-titulos);
+    color: #000000;
+}
+
+.projetos__lista-projetos {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projetos__lista-projetos__projeto-card {
+    width: 31%;
+    height: 200px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 20px 1.1%;
+    float: inline-start;
+}
+
+.projetos__lista-projetos__projeto-card__foto {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+.projetos__lista-projetos__projeto-card__corpo {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(1, 1, 1, 0.7);
+    box-sizing: border-box;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.projetos__lista-projetos__projeto-card__corpo.aparecer {
+    height: 100%;
+}
+
+.projetos__lista-projetos__projeto-card__corpo__nome-projeto {
+    display: none;
+    font-size: 30px;
+    font-family: var(--fonte-titulos);
+    color: var(--cor-textos-padrao);
+    text-transform: uppercase;
+    line-break: auto;
+}
+
+.projetos__lista-projetos__projeto-card__corpo__nome-projeto.aparecer {
+    display: block;
+}
+
+.projetos__lista-projetos__projeto-card__corpo__link-visualizar-projeto {
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: var(--cor-titulos);
+    color: #000000;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.projetos__lista-projetos__projeto-card__corpo__link-visualizar-projeto.aparecer {
+    display: block;
+}
+
+@media only screen and (max-width: 500px) {
+    .projetos__categorias {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .projetos__categorias__categoria {
+        width: 100%;
+    }
+
+    .projetos__lista-projetos__projeto-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
